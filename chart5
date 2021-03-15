@@ -1,0 +1,6 @@
+yearDeath = dmv_cleaned.groupby(dmv_cleaned["year"]).sum()["NUMBER_OF_PERSONS_KILLED"]
+yearDeath.plot(kind = "bar")
+
+plt.title("Car Collision Death Reports")
+plt.xlabel("Year")
+plt.ylabel("Number of People")
