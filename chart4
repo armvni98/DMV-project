@@ -1,0 +1,4 @@
+dmv_cleaned.groupby("BOROUGH").count().plot(kind="bar", color = "green", legend = False)
+plt.title("Collisions by Borough")
+plt.xlabel("Borough")
+plt.ylabel("Collision Reports")
