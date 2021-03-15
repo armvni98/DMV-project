@@ -1,0 +1,4 @@
+dmv_cleaned.groupby("month").count().plot(kind="bar", legend = False, color = "black")
+plt.title("Collisions by Month")
+plt.xlabel("Month")
+plt.ylabel("Collision Reports")
