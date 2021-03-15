@@ -1,0 +1,5 @@
+dmv_cleaned.groupby("hour").count().plot(kind="bar", legend = False, color = "blue")
+plt.title("Collisions by Time")
+plt.xlabel("Time")
+plt.ylabel("Collision Reports")
+
