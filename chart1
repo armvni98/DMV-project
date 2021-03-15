@@ -1,0 +1,4 @@
+dmv_cleaned.groupby("year").count().plot(kind = "line", legend = False)
+plt.title("Accident Rates In New York City")
+plt.xlabel("Year")
+plt.ylabel("Collision Reports")
