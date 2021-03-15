@@ -1,0 +1,4 @@
+dmv_grouped_year[["NUMBER_OF_PERSONS_KILLED","NUMBER_OF_PERSONS_INJURED"]].plot(kind = "bar")
+plt.title("People Injured vs. Killed in Collision")
+plt.xlabel("Year")
+plt.ylabel("Collision Reports")
