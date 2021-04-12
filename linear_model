@@ -1,0 +1,15 @@
+#creating dataframe for injury rate at 5pm in the bronx
+crash_df = pd.DataFrame({"hour":[17], "BOROUGH_BROOKLYN":[0], "BOROUGH_BRONX":[1], "BOROUGH_BROOKLYN":[0], "BOROUGH_MANHATTAN":[0], "BOROUGH_QUEENS":[0]})
+crash_df
+
+#the result is 0.327
+lm.predict(crash_df)
+
+
+
+#creating dataframe for injury rate at 3am in the bronx
+crash2_df = pd.DataFrame({"hour":[3], "BOROUGH_BROOKLYN":[0], "BOROUGH_BRONX":[1], "BOROUGH_BROOKLYN":[0], "BOROUGH_MANHATTAN":[0], "BOROUGH_QUEENS":[0]})
+crash2_df
+
+#the result is 0.297
+lm.predict(crash2_df)
