@@ -1,0 +1,6 @@
+lm2 = smf.ols("NUMBER_OF_PERSONS_INJURED ~ hour + BOROUGH_BRONX + BOROUGH_BROOKLYN + BOROUGH_QUEENS", data = df).fit()
+lm2.summary()
+
+
+lm3 = smf.ols("NUMBER_OF_PERSONS_INJURED ~ BOROUGH_BRONX + BOROUGH_BROOKLYN + BOROUGH_QUEENS", data = df).fit()
+lm3.summary()
