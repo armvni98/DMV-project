@@ -1,0 +1,5 @@
+x = df.drop("NUMBER_OF_PERSONS_INJURED", axis = 1)
+x
+
+y = df["NUMBER_OF_PERSONS_INJURED"]
+y
