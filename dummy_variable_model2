@@ -1,0 +1,2 @@
+df = pd.get_dummies(df, columns = ["CONTRIBUTING_FACTOR_VEHICLE_1", "VEHICLE_TYPE_CODE_1", "month"], drop_first = True)
+df
