@@ -1,0 +1,16 @@
+dmv.columns = [c.replace(' ', '_') for c in dmv.columns]
+
+del dmv["CONTRIBUTING_FACTOR_VEHICLE_3"]
+del dmv["CONTRIBUTING_FACTOR_VEHICLE_4"]
+del dmv["CONTRIBUTING_FACTOR_VEHICLE_5"]
+
+del dmv["OFF_STREET_NAME"]
+del dmv["CONTRIBUTING_FACTOR_VEHICLE_2"]
+del dmv["VEHICLE_TYPE_CODE_2"]
+del dmv["VEHICLE_TYPE_CODE_3"]
+
+del dmv["VEHICLE_TYPE_CODE_4"]
+del dmv["VEHICLE_TYPE_CODE_5"]
+
+
+dmv_cleaned = dmv.dropna()
