@@ -1,0 +1,23 @@
+nyc_map = folium.Map(location = [40.7128, -74.0060])
+nyc_map
+
+
+
+df2 = df[["LATITUDE", "LONGITUDE", "hour", "month", "year", "BOROUGH_BROOKLYN"]]
+df2
+
+
+
+month_filter = df2["month"]=="July"
+hour_filter = df2["hour"]==17
+year_filter = df2["year"]==2020
+
+
+
+rush_hour = df2[hour_filter]
+rush_hour2 = rush_hour[month_filter]
+rush_hour3 = rush_hour2[year_filter]
+
+
+
+rush_hour3 = rush_hour3.reset_index(drop = True)
