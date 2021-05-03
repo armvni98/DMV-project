@@ -1,0 +1,5 @@
+for i in range(100):
+    row = rush_hour3.loc[i]
+    folium.Marker([row["LATITUDE"], row["LONGITUDE"]]).add_to(nyc_map)
+    
+nyc_map
