@@ -1,0 +1,22 @@
+brooklyn_filter = df2["BOROUGH_BROOKLYN"]==1
+
+
+b_hour = df2[hour_filter]
+b_hour2 = b_hour[month_filter]
+b_hour3 = b_hour2[brooklyn_filter]
+
+
+
+b_hour3 = b_hour3.reset_index(drop = True)
+
+
+
+brooklyn_map = folium.Map(location = [40.6782, -73.9442])
+
+
+ 
+for i in range(100):
+    row2 = b_hour3.loc[i]
+    folium.Marker([row2["LATITUDE"], row2["LONGITUDE"]]).add_to(brooklyn_map)
+    
+brooklyn_map
