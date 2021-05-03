@@ -1,5 +1,5 @@
 # My name is Ashadur Omith, and this is my CMP328 Techniques in Data Science project milestone 1-3.
-# My project milestone 1 is published online via: https://sites.google.com/view/dmv-collision-analysis-ashadur/home
+# My project is published online via: https://sites.google.com/view/dmv-collision-analysis-ashadur/home
 
 # DMV-project
  
